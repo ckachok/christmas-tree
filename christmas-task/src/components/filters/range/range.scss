@@ -1,0 +1,59 @@
+/* Style for the range slider */
+.noUi-target {
+  background: #7799bc;
+  border-radius: 4px;
+  border: 1px solid #abc4e0;
+  box-shadow: none;
+}
+
+.noUi-horizontal {
+  height: 8px;
+}
+
+.noUi-connect {
+  background: #fff;
+}
+
+/* Style for the control handles */
+.noUi-horizontal .noUi-handle {
+  width: 15px;
+  height: 15px;
+  right: -7px;
+  top: -5px;
+}
+
+.noUi-handle {
+  background: #7799bc;
+  border: 1px solid #abc4e0;
+  border-radius: 50%;
+  box-shadow: none;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    content: none;
+  }
+}
+
+.filters-range {
+  margin-bottom: 15px;
+
+  &__type {
+    margin-bottom: 10px;
+
+    & .filters__text,
+    & .filters__text {
+      margin: 0 0 10px;
+    }
+  }
+
+  &__values {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+
+    & .filters__text {
+      margin: 0;
+    }
+  }
+}

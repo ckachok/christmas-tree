@@ -1,1 +1,86 @@
-/* Basic styles */
+/* Basic style */
+@font-face {
+  font-family: "frozen";
+  font-weight: 700;
+  src: url("./assets/fonts/ice-kingdom-frozen-cyrillic-bold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-weight: 500;
+  src: url("./assets/fonts/gilroy-medium.ttf");
+}
+
+@font-face {
+  font-family: "Neucha", cursive;;
+  font-weight: 400;
+  src: url("./assets/fonts/neucha-regular.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  padding: 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+.body {
+  min-height: 100vh;
+  color: #FFF;
+  background: linear-gradient(45deg, #98cae5, #1a76b1, #171f2c);
+  background-image: url("./assets/image/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px 30px;
+  max-width: 1600px;
+
+  @media (max-width: 540px) {
+    padding: 20px;
+  }
+}
+
+.main-title {
+  position: absolute;
+  z-index: -1;
+  visibility: hidden;
+}

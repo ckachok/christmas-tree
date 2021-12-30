@@ -1,0 +1,138 @@
+.filters-value {
+  margin-bottom: 15px;
+
+  &__type {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 37px;
+
+    &_color .filters-value__buttons {
+      width: 265px;
+    }
+
+    &_size .filters-value__buttons {
+      max-width: 200px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.shape-button {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  transition: filter .5s;
+
+  &:nth-child(1) {
+    background-image: url("../../../assets/svg/ball.svg");
+  }
+
+  &:nth-child(2) {
+    background-image: url("../../../assets/svg/bell.svg");
+  }
+
+  &:nth-child(3) {
+    background-image: url("../../../assets/svg/cone.svg");
+  }
+
+  &:nth-child(4) {
+    background-image: url("../../../assets/svg/snowflake.svg");
+  }
+
+  &:nth-child(5) {
+    background-image: url("../../../assets/svg/figurine.svg");
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 15px #ffd700);
+    transition: filter .5s;
+  }
+
+  &.active {
+    filter: drop-shadow(0 0 10px #ffd700);
+  }
+}
+
+.color-button {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #278D9F;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: filter .5s;
+
+  &:nth-child(1) {
+    background-color: #fff;
+  }
+
+  &:nth-child(2) {
+    background-color: #FDD700;
+  }
+
+  &:nth-child(3) {
+    background-color: #FD0000;
+  }
+
+  &:nth-child(4) {
+    background-color: #2199EB;
+  }
+
+  &:nth-child(5) {
+    background-color: #08AA05;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 15px #ffd700);
+    transition: filter .5s;
+  }
+
+  &.active::before {
+    content: "✓";
+    position: absolute;
+    top: -3px;
+    left: 4px;
+    font-size: 30px;
+    font-weight: 900;
+    color: #a7c7e0;
+  }
+}
+
+.size-button {
+  width: 50px;
+  height: 50px;
+  background-image: url("../../../assets/svg/ball.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  cursor: pointer;
+  transition: .5s;
+
+  &:nth-child(2) {
+    margin: 0 0 0 5px;
+    background-size: 40px 40px;
+  }
+
+  &:nth-child(3) {
+    background-size: 32px 32px;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 15px #ffd700);
+    transition: filter .5s;
+  }
+
+  &.active {
+    filter: drop-shadow(0 0 15px #ffd700);
+  }
+}

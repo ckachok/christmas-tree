@@ -1,0 +1,37 @@
+.nav {
+  width: 280px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    font-family: "frozen";
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-shadow: 1px 0 1px #000, 0 1px 1px #000,
+                -1px 0 1px #000, 0 -1px 1px #000;
+    transition: text-shadow .5s;
+
+    &:first-child {
+      padding-right: 15px;
+    }
+
+    &:hover {
+      text-shadow: 0 0 10px #fff, 0 0 10px #ffd700,
+                   0 0 30px #fff, 0 0 30px #ffd700;
+      transition: text-shadow .5s;
+    }
+  }
+
+  &__link {
+
+    &.active {
+      text-shadow: 0 0 10px #fff, 0 0 10px #ffd700,
+                   0 0 30px #fff, 0 0 30px #ffd700;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.filters {
+  margin-bottom: 25px;
+
+  &__text {
+    margin: 0 15px 0 0;
+    font-family: "Gilroy";
+    font-weight: 500;
+    font-size: 22px;
+    text-shadow: 1px 0 1px #000, 0 1px 1px #000,
+                -1px 0 1px #000, 0 -1px 1px #000;
+  }
+}

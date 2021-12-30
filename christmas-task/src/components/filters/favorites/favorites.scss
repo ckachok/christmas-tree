@@ -1,0 +1,41 @@
+.filters-favorites {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:checked + .filters-favorites__label::after {
+      content: "✓";
+      position: absolute;
+      left: 5px;
+      top: -16px;
+      font-size: 30px;
+      font-weight: 900;
+      color: #a7c7e0;
+    }
+  }
+
+  &__label {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: 0;
+      width: 28px;
+      height: 28px;
+      background-color: rgba(17, 113, 179, .3);
+      border: 1px solid #278D9F;
+      border-radius: 5px;
+    }
+  }
+}

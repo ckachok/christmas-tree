@@ -1,0 +1,19 @@
+.logo {
+  width: 50px;
+  height: 58px;
+  margin-right: 30px;
+  background-image: url("../../assets/svg/logo-christmas-tree.svg");
+  background-repeat: no-repeat;
+  filter: drop-shadow(1px 0 1px #000);
+  transition: filter .5s;
+
+  &.active {
+    filter: drop-shadow(0 0 5px #ffd700);
+    transition: filter .5s;
+  }
+
+  &:hover {
+    filter: drop-shadow(0 0 5px #ffd700);
+    transition: filter .5s;
+  }
+}

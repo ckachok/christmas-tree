@@ -1,0 +1,23 @@
+.dev-info {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  font-family: "Gilroy";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  text-shadow: 1px 0 1px #000, 0 1px 1px #000,
+              -1px 0 1px #000, 0 -1px 1px #000;
+  transition: text-shadow .5s;
+
+  &__developer {
+    transition: text-shadow .5s;
+
+    &:hover {
+      text-shadow: 0 0 5px #fff, 0 0 5px #ffd700,
+                   0 0 15px #fff, 0 0 15px #ffd700;
+      transition: text-shadow .5s;
+    }
+  }
+}
